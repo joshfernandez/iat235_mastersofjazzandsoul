@@ -1,0 +1,53 @@
+/*
+	IAT 102 with Dr. Andrew Hawryshkewich
+	D102 with Elgin Skye-McLaren
+	P03: HTML/CSS
+	grid.css
+
+	Name: Josh Arik Miguel Fernandez
+	Student Number: 301246300
+*/
+
+/*
+  	For majority of my work, I used the February 28 and March 7 tutorial materials from class to setup the basic Css# page. 
+  	Any added information, semantics, or tags will be provided in the comments.
+	I also reference my own book called "HTML & CSS: Design and Build Websites" by Jon Duckett.
+*/
+
+*, *::after, *::before { /* All browsers need to have box sizing */
+	-webkit-box-sizing: border-box; /* Other browsers */
+	-moz-box-sizing: border-box; /* Mozilla Firefox */
+	box-sizing: border-box;
+}
+
+.grid-col-2of6 {
+	width: 33.3333333333%;
+	padding: 0.5rem 0.5rem;
+}
+
+.grid-col-3of6 {
+	width: 50%;
+	padding: 0.5rem 0.5rem;
+}
+
+[class^="grid-col-"] {
+	float: left;
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: left;
+}
+
+@media (max-width: 50rem) {
+
+	.grid-col-2of6 {
+		width: 100%;
+	}
+
+	.grid-col-3of6 {
+		width: 100%;
+	}
+
+}

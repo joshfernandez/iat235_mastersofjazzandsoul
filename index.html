@@ -1,0 +1,269 @@
+<!-- 
+  IAT 102 with Dr. Andrew Hawryshkewich
+  D102 with Elgin Skye-McLaren
+  P03: HTML/CSS
+  index.html
+
+  Name: Josh Arik Miguel Fernandez
+  Student Number: 301246300
+-->
+
+<!--
+  For majority of my work, I used the February 21 tutorial materials from class to setup the basic HTML5 page. 
+  Any added information, semantics, or tags will be provided in the comments.
+  I also reference my own book called "HTML & CSS: Design and Build Websites" by Jon Duckett.
+-->
+
+<!-- 
+  For all of my artist descriptions: 
+  - Anderson .Paak: https://en.wikipedia.org/wiki/Anderson_Paak
+  - Gallant: https://en.wikipedia.org/wiki/Gallant_(singer)
+  - Tom Misch: My own observations
+-->
+
+<!doctype html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+
+    <meta charset="utf-8">
+    <!-- Used the March 7 tutorial materials from class to accomodate the website on a phone device -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Josh Fernandez - Masters of Jazz and Soul</title>
+
+    <!-- Used the February 28 tutorial materials from class to link CSS stylesheets to the HTML page -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+  </head>
+
+  <!-- BODY -->
+  <body>
+
+    <!-- TITLE AND AUTHOR -->
+    <header>
+      <h1>MASTERS OF JAZZ AND SOUL</h1>
+      <h3>By Josh Fernandez</h3>
+    </header>
+
+    <!-- INTRODUCTORY PARAGRAPH -->
+    <p>
+      <!-- 
+        Obtained the help from Elgin to realize that bolded text should not formally be represented by the <strong> tag inside the HTML page, but rather by a <span> class inside the CSS page.
+        Apparently, because bolded text is a type of style, it should be accomodated in the CSS file, not the HTML file.
+      -->
+      The music in our world, just like the world itself, is ever-constantly changing. As we are living in this decade of the 2010s, we are noticing that our music evolves not just by experimenting with various technological and artificial sounds provided by electronic instruments but by also exploring other musical genres and waves to create a fusion of new beats, rhythms, and tones that we have always wanted to hear. <span class="bolded_text">This year, this idea of music fusion is becoming stronger and more evident in the genres of R&B, jazz, and soul.</span>
+    </p>
+    <p>
+      These are some of the intelligent, inspiring, and beautifully-sounding R&B artists who I discovered growing in their music tastes and demonstrating their soulful vibes.
+    </p>
+
+    <!-- NAVIGATION BAR -->
+    <!-- Used the March 7 tutorial materials from class to implement grids for the navigation bar using <div> tags. -->
+    <nav class="grid-row">
+
+      <div class="grid-col-2of6">
+        <a href="#anderson_paak" class="nav-main-item">Anderson .Paak</a>
+      </div>
+
+      <div class="grid-col-2of6">
+        <a href="#gallant" class="nav-main-item">Gallant</a>
+      </div>
+
+      <div class="grid-col-2of6">
+        <a href="#tom_misch" class="nav-main-item">Tom Misch</a>
+      </div>
+
+    </nav>
+
+    <!-- SECTION: ANDERSON .PAAK -->
+    <section id="anderson_paak">
+
+      <h2>
+        <!-- Used HTML & CSS: Design and Build Websites book, page 86 by Jon Duckett to implement opening a page in a new window using the <target> property. This goes for all other <a> tags, too. -->
+        <a href="http://www.andersonpaak.com/" target="_blank">
+          Anderson .Paak
+        </a>
+      </h2>
+
+      <!-- Used the March 7 tutorial materials from class to implement an approrpiate 2-column grid for the navigation bar using <div> tags. This goes for the other two sections. -->
+      <div class="grid-row">
+
+        <div class="grid-col-3of6">
+
+          <a href="http://www.andersonpaak.com/" target="_blank">
+          <figure>
+            <img src="img/anderson_paak.jpg" alt="Anderson .Paak">
+            <figcaption>Anderson .Paak performing live at the SXSW 2016. Check out his website for more details.</figcaption>
+          </figure>
+          </a>
+
+        </div> <!-- END OF first grid-col-3of6 -->
+
+        <div class="grid-col-3of6">
+
+          <p>
+            <a href="https://www.youtube.com/watch?v=vvPeJLcK2Lk" target="_blank">
+              "Am I Wrong?"</a> 
+            to say he's not one of this decade's most notable R&B artists? Boy, do I love him! An American singer, songwriter, drummer, and record producer from Oxnard, California, he creates jumpy and dancy music by following the never-ending process of experimenting with instruments he is comfortable and not comfortable at. Having made his 5 complete albums, he has grown to incorporate his lyrics and tunes with his story of being arrested, homeless, and never-ending love for his family and friends.
+          </p>
+
+          <h3>These are my favourite live performances from him:</h3>
+
+          <ul>
+            <li>
+              <a href="https://youtu.be/ferZnZ0_rSM" target="_blank">
+                Anderson. Paak & The Free Nationals: NPR Music Tiny Desk Concert 
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/PowyyDrZ21M" target="_blank">
+                Anderson .Paak & The Free Nationals: "Am I Wrong" at the SXSW 2016 Music Festival
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- END OF second grid-col-3of6 -->
+
+      </div> <!-- END OF grid-row -->
+
+    </section>
+
+    <!-- SECTION: GALLANT -->
+    <section id="gallant">
+
+      <h2>
+        <a href="http://www.gallant.space/" target="_blank">
+          Gallant
+        </a>
+      </h2>
+
+      <div class="grid-row">
+
+        <div class="grid-col-3of6">
+
+          <a href="http://www.gallant.space/" target="_blank">
+          <figure>
+            <img src="img/gallant.jpg" alt="Gallant">
+            <figcaption>Gallant making his debut at Coachella 2016. Check out his website for more details.</figcaption>
+          </figure>
+          </a>
+
+        </div> <!-- END OF first grid-col-3of6 -->
+
+        <div class="grid-col-3of6">
+
+          <p>
+            I just discovered Christopher Gallant last week, and man did his music strike right into my heart and soul! I was surprised to see how grateful he was to brought up in such a supportive family and prestiguous school. Having started his music career in 2013 in Los Angeles, he constantly collaborates with Jhene Aiko and other like-minded artists to fill the ears of those listening to him with enriching, novel, and soulful music - especially that of his debut studio album, 
+            <a href="https://www.youtube.com/playlist?list=PLZf9XXbK2hZWzlQjn72dBizkNrsCLYDf4" target="_blank">
+              Ology</a>.
+          </p>
+
+          <h3>These are my favourite live performances from him:</h3>
+          
+          <ul>
+            <li>
+              <a href="https://youtu.be/BGpmIANN5Lg" target="_blank">
+                Gallant: NPR Music Tiny Desk Concert 
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/mJLwEKwuolw" target="_blank">
+                His performance at The FADER Fort Presented By Converse  
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- END OF second grid-col-3of6 -->
+
+      </div> <!-- END OF grid-row -->
+
+    </section>
+
+    <!-- SECTION: TOM MISCH -->
+    <section id="tom_misch">
+
+      <h2>
+        <a href="http://www.tommisch.com/" target="_blank">
+          Tom Misch
+        </a>
+      </h2>
+
+      <div class="grid-row">
+
+        <div class="grid-col-3of6">
+
+          <a href="http://www.tommisch.com/" target="_blank">
+          <figure>
+            <img src="img/tom_misch.jpg" alt="Tom Misch">
+            <figcaption>Tom Misch thinking about his life as a beatmaker and multi-instrumentalist. Check out his website for more details.</figcaption>
+          </figure>
+          </a>
+
+        </div> <!-- END OF first grid-col-3of6 -->
+
+        <div class="grid-col-3of6">
+
+          <p>
+            Mah boi, Tom Misch. I discovered this amazing artist through his song, 
+            <a href="https://youtu.be/5CO0iiOMz3I" target="_blank">
+              So Close</a>, 
+            and I was instantly hooked with his music. His lyrics describe a release from reality and looks at the value of dreams, aspirations, and happiness. Using his formula to incorporate the melancholy of his synth instruments with the upbeat rhythms of the electric guitar and the drums, I can sense how comforting and transparent he puts his hopeful personality into his work. Mind you, he's just starting his music career - he's just 21 years old! Fortunately, the aesthetics of his music is emphasized in his live performances.
+          </p>
+
+          <h3>These are my favourite live performances from him:</h3>
+          
+          <ul>
+            <li>
+              <a href="https://youtu.be/Wq813U0Krc4" target="_blank">
+                His performance of "I Wish" at Deezer NEXT in the United Kingdom 
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/7BrrCIIfChM" target="_blank">
+                His performance of "Watch Me Dance" at Deezer NEXT in the United Kingdom 
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- END OF second grid-col-3of6 -->
+
+      </div> <!-- END OF grid-row -->
+
+    </section>
+
+    <!-- SECTION: TABLE -->
+    <!-- Used HTML & CSS: Design and Build Websites book, Chapter 6 by Jon Duckett to implement the table. -->
+    <table>
+
+      <!-- Usedhttps://www.w3schools.com/html/html_tables.asp to include a caption for the table. -->
+      <caption>These are some of my other favorite music artists.</caption>
+      <tr>
+        <th>Acoustic Pop</th>
+        <th>Hip-Hop and Rap</th>
+        <th>Old School R&B</th>
+        <th>Rhythm & Blues</th> 
+        <th>Stadium Rock</th>
+      </tr>
+      <tr>
+        <td>Gabe Bondoc</td>          <!-- Acoustic Pop artist -->
+        <td>Kendrick Lamar</td>       <!-- Hip-Hop and Rap artist -->
+        <td>Boyz II Men</td>          <!-- Old School R&B band -->
+        <td>Justin Timberlake</td>    <!-- Rhythm & Blues artist -->
+        <td>Coldplay</td>             <!-- Stadium Rock band -->
+      </tr>
+      <tr>
+        <td>AJ Rafael</td>            <!-- Acoustic Pop artist -->
+        <td>J. Cole</td>              <!-- Hip-Hop and Raph artist -->
+        <td>Usher</td>                <!-- Old School R&B band -->
+        <td>The Weeknd</td>           <!-- Rhythm & Blues artist -->
+        <td>OneRepublic</td>          <!-- Stadium Rock band -->
+      </tr>
+    </table>
+
+  </body>
+</html>

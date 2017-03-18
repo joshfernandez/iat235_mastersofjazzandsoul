@@ -1,0 +1,153 @@
+/*
+	IAT 102 with Dr. Andrew Hawryshkewich
+	D102 with Elgin Skye-McLaren
+	P03: HTML/CSS
+	main.css
+
+	Name: Josh Arik Miguel Fernandez
+	Student Number: 301246300
+*/
+
+/*
+  	For majority of my work, I used the February 28 and March 7 tutorial materials from class to setup the basic Css# page. 
+  	Any added information, semantics, or tags will be provided in the comments.
+	I also reference my own book called "HTML & CSS: Design and Build Websites" by Jon Duckett.
+*/
+
+/*	Used paletton.com to choose the appropriate color scheme for text links and navigation items. */
+
+body {
+	color: white;
+	background-color: black;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+		/* Used https://www.w3schools.com/cssref/css_websafe_fonts.asp 
+		to choose the appropriate font family for my article. */
+	font-size: 1.25rem;
+	margin: 5rem;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+p, ol, ul {
+	line-height: 1.75rem;
+		/* Used HTML & CSS: Design and Build Websites book, page 283 by Jon Duckett 
+		to implement leading to the webpage. */
+	max-width: 80rem;
+}
+
+ul {
+	list-style-type: square;
+		/* Used HTML & CSS: Design and Build Websites book, page 333 by Jon Duckett 
+		to implement square bullets to the unordered list. */
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	border: 0.25rem solid white; 
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-size: 1rem;
+	font-style: italic;
+		/* Used HTML & CSS: Design and Build Websites book, page 280 by Jon Duckett 
+		to implement the italicized font style. */
+}
+
+a {
+	color: rgb(26, 96, 255);
+	transition: color 0.5s;
+}
+
+a:active, a:hover, a:focus {
+	color: rgb(173, 198, 255);
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+nav a {
+	width: 100%;
+}
+
+nav a, nav a:visited {
+	display: inline-block;
+	padding: 1rem 1.25rem;
+	text-decoration: none;
+}
+
+/* 	Used HTML & CSS: Design and Build Websites book, Chapter 14 by Jon Duckett 
+	to learn how to style a table.
+	This goes for the table caption, th, and td tags as well. */
+table {
+	width: 100%;
+	border: 0.1rem solid white;
+	border-spacing: 2rem 0;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+table caption {
+	padding: 0.5rem 0.5rem;
+	font-style: italic;
+}
+
+th, td {
+	padding: 0.75rem 0;
+	vertical-align: middle;
+		/* Used https://www.w3schools.com/css/css_table.asp
+		to lock the text at the middle of every cell. */
+	text-align: center;
+}
+
+th {
+	text-transform: uppercase;
+		/* 	Used HTML & CSS: Design and Build Websites book, Chapter 14 by Jon Duckett 
+		to fix the column titles as uppercase. */
+	font-weight: bold;
+	color: rgb(83, 29, 255);
+	border-bottom: 0.05rem solid white;
+}
+
+.bolded_text {
+	font-weight: bold;
+		/*
+        Obtained the help from Elgin to realize that bolded text should not formally be represented by the <strong> tag inside the HTML page, but rather by a <span> class inside the CSS page.
+        Apparently, because bolded text is a type of style, it should be accomodated in the CSS file, not the HTML file.
+      	*/
+}
+
+.nav-main-item{
+	display: inline-block;
+	text-align: center;
+	color: white;
+	background-color: rgb(83, 29, 255);
+	font-size: 1.5rem;
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: white;
+	background-color: rgb(193, 174, 255);
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
